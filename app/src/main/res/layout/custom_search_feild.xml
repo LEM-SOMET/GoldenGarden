@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".Screens.Fragments.HomeActivityFrag">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_margin="8dp"
+            android:layout_width="65dp"
+            android:src="@drawable/vegetlogo"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            />
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="270dp"
+            android:padding="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="33dp"
+            android:background="@drawable/search_bar_custom"
+            android:hint="E.g Golden Garden Search"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/icNotification"
+            android:layout_margin="8dp"
+            android:layout_width="45dp"
+            android:src="@drawable/ic_notifications"
+            android:layout_height="33dp"/>
+    </LinearLayout>
+</LinearLayout>

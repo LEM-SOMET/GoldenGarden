@@ -1,0 +1,2 @@
+rootProject.name = "Golden Graden App"
+include ':app'

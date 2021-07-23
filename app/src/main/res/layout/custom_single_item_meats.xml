@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_margin="7dp"
+        android:layout_height="150dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvnameItem"
+                    android:layout_width="wrap_content"
+                    android:text="King of meats"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+                <Space
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvTypeView"
+                    android:layout_width="wrap_content"
+                    android:text="King of meats"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="150dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imgMeat"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/katna"
+                    android:layout_height="match_parent"/>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

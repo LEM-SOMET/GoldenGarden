@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".Screens.AddtcartActivity">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/my_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#55B559"
+                android:elevation="4dp"
+                app:title="My Cart"
+                app:navigationIcon="@drawable/ic_arrow_back"
+                app:titleTextColor="@color/white"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"/>
+        </com.google.android.material.appbar.AppBarLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/itemcount"
+                        android:layout_width="wrap_content"
+                        android:text="4 Items"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/option_id"
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Option"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Option"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/addtocartRecyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/tv_text_order"
+                        android:layout_below="@+id/addtocartRecyclerview"
+                        android:layout_width="match_parent"
+                        android:gravity="top"
+                        android:padding="9dp"
+                        android:hint="Enter Level Order Not..."
+                        android:textSize="14sp"
+                        android:background="@drawable/custom_border"
+                        android:layout_height="150dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/conformButton"
+                        android:layout_below="@+id/tv_text_order"
+                        android:layout_width="match_parent"
+                        android:layout_margin="25dp"
+                        app:cornerRadius="25dp"
+                        android:padding="15dp"
+                        android:text="CONFORM ORDER"
+                        android:textSize="18sp"
+                        android:backgroundTint="#52E158"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>
